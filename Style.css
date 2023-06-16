@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-image: url(./img/Bg.jpg);
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+main {
+  display: block;
+  position: relative;
+}
+.container {
+  z-index: 500;
+  position: relative;
+  color: white;
+}
+.wrapper {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 5%;
+  position: relative;
+}
+.left {
+  /* margin: 8%;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: auto;
+  position: fixed; */
+  width: 45%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: fixed;
+}
+.content-left {
+  margin-left: -3%;
+  padding-top: 30%;
+}
+
+.greet {
+  font-family: "Quando", serif;
+  font-size: 2vw;
+  margin-bottom: 2vh;
+  padding-top: 5%;
+  overflow: hidden;
+  color: #90713c;
+}
+
+.name {
+  font-family: "Cormorant Upright", serif;
+  padding: 0%;
+  font-weight: bold;
+  font-size: 3vw;
+  display: block;
+  overflow: hidden;
+}
+.bio {
+  font-size: 1vw;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 60%;
+  padding-top: 10px;
+  display: block;
+  overflow: hidden;
+  color: #c9b9a9;
+}
+.right {
+  width: 45%;
+  height: 80vh;
+  float: right;
+  /* grid-column-gap: 16px;
+  grid-row-gap: 16px; */
+  text-align: center;
+  flex-direction: column;
+  /* grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr; */
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+.nav {
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 2%;
+  padding-right: 0%;
+}
+.nav-item {
+  text-align: right;
+  padding-right: 5%;
+  display: inline-block;
+  position: relative;
+}
+.nav-link:hover {
+  color: #90713c;
+}
+.nav-link {
+  z-index: 100;
+  color: white;
+  text-align: right;
+  text-transform: uppercase;
+  border: 0 solid #000;
+  font-family: "Cormorant Upright", serif;
+  font-size: 7vw;
+  font-weight: 300;
+  line-height: 2em;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  display: block;
+  position: relative;
+}
+
+h2,
+h1,
+p {
+  margin: 0;
+}
+.copywright {
+  flex: 0 auto;
+  margin-bottom: 40px;
+  padding-left: -5px;
+  padding-right: 10px;
+  transform: rotate(-90deg);
+  width: 130px;
+  position: fixed;
+  top: auto;
+  bottom: 50px;
+  left: 0%;
+  right: 0%;
+}
+.rights {
+  color: white;
+  text-align: center;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 1vw;
+}
+@media screen and (max-width: 538px) {
+  .greet {
+    font-size: 3vw;
+  }
+  .name {
+    font-size: 3vw;
+  }
+  .bio {
+    font-size: 2vh;
+  }
+  .nav-link {
+    font-size: 6vw;
+  }
+  .rights {
+    font-size: 3vw;
+  }
+  .right {
+    padding-top: 1vh;
+  }
+}
